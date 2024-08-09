@@ -1,0 +1,238 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI理发师 - 高端发型设计的未来</title>
+    <link rel="icon" href="logo (2).png" type="image/x-icon">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=Noto+Sans+SC:wght@300;400;700&display=swap');
+    
+      body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans SC', sans-serif;
+        background-color: #000;
+        color: #fff;
+      }
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      header {
+        text-align: center;
+        padding: 4rem 0;
+        background: linear-gradient(45deg, #ff00ff, #00ffff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      h1 {
+        font-family: 'Noto Serif SC', serif;
+        font-size: 5rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 0;
+      }
+      .tagline {
+        font-size: 1.8rem;
+        font-weight: 300;
+        margin-top: 1rem;
+      }
+      .features {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 6rem 0;
+      }
+      .feature {
+        flex-basis: calc(33.333% - 2rem);
+        text-align: center;
+        margin-bottom: 4rem;
+        transition: transform 0.3s ease;
+      }
+      .feature:hover {
+        transform: translateY(-10px);
+      }
+      .feature svg {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 2rem;
+      }
+      .feature h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+      }
+      .feature p {
+        font-size: 1.2rem;
+        color: #aaa;
+      }
+      .cta {
+        background: linear-gradient(45deg, #ff00ff, #00ffff);
+        color: white;
+        padding: 1.2rem 3rem;
+        border-radius: 50px;
+        font-size: 1.4rem;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+      .cta:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255,255,255,0.5);
+      }
+      .waitlist-form {
+        max-width: 600px;
+        margin: 6rem auto;
+        background-color: rgba(255,255,255,0.1);
+        padding: 3rem;
+        border-radius: 20px;
+        box-shadow: 0 0 40px rgba(255,255,255,0.1);
+      }
+      input[type="email"] {
+        width: 100%;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        border: none;
+        border-bottom: 2px solid #fff;
+        background-color: transparent;
+        color: #fff;
+        font-size: 1.2rem;
+      }
+      input[type="email"]::placeholder {
+        color: rgba(255,255,255,0.6);
+      }
+      button[type="submit"] {
+        background: linear-gradient(45deg, #ff00ff, #00ffff);
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+      button[type="submit"]:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255,255,255,0.5);
+      }
+      .demo {
+        margin-top: 6rem;
+        text-align: center;
+      }
+      #demo-container {
+        position: relative;
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 0 40px rgba(255,255,255,0.2);
+      }
+      #demo-image, #hairstyle-overlay {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.5s ease;
+      }
+      #hairstyle-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+    </style>
+    </head>
+    <body>
+      <header>
+        <h1>AI理发师</h1>
+        <p class="tagline">用尖端AI技术重新定义奢华发型设计</p>
+      </header>
+    
+      <div class="container">
+        <section class="features">
+          <div class="feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="url(#gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#00ffff;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 16v-4"></path>
+              <path d="M12 8h.01"></path>
+            </svg>
+            <h2>AI面部分析</h2>
+            <p>革命性的面部识别技术，为您匹配完美发型</p>
+          </div>
+          <div class="feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="url(#gradient2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <defs>
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#00ffff;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+            <h2>高级定制发型</h2>
+            <p>由世界顶级设计师精心打造的独家发型</p>
+          </div>
+          <div class="feature">
+            <svg viewBox="0 0 24 24" fill="none" stroke="url(#gradient3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <defs>
+                <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#ff00ff;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#00ffff;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+            <h2>虚拟现实预览</h2>
+            <p>沉浸式3D可视化体验您的全新造型</p>
+          </div>
+        </section>
+    
+        <section class="waitlist-form">
+          <h2>加入精英等候名单</h2>
+          <p>成为首批体验AI驱动发型设计巅峰的尊贵客户</p>
+          <form id="waitlist-form">
+            <input type="email" placeholder="输入您的邮箱以获得独家访问权" required>
+            <button type="submit">预约您的专属体验</button>
+          </form>
+        </section>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+      <script>
+        document.getElementById('waitlist-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = this.querySelector('input[type="email"]').value;
+        
+        fetch('/submit-email', {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({email: email}),
+        })
+        .then(response => response.json())
+        .then(data => {
+            alert(data.message || '感谢您的订阅！');
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            alert('提交失败，请稍后再试。');
+        });
+        });
+      </script>
+    </body>
+    </html>
