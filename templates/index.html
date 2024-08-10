@@ -153,7 +153,7 @@
         <p class="tagline">用尖端AI技术重新定义奢华发型设计</p>
       </header>
     
-      <div class="container">
+      <div id="box" class="container">
         <section class="features">
           <div class="feature">
             <svg viewBox="0 0 24 24" fill="none" stroke="url(#gradient1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -233,15 +233,15 @@
             alert('提交失败，请稍后再试。');
         });
         });
+	document.addEventListener('DOMContentLoaded', function() {
+		let colorbg = new Color4Bg.TrianglesMosaicBg({
+			dom: "box",
+			colors: ["#ab80fe","#d926ff","#f2f2f2","#e719ff","#6d92ff","#fe01ff"],
+			loop: true
+		})
+		});
       </script>
 
-	<script src="TrianglesMosaicBg.js"></script>
-	
-	let colorbg = new Color4Bg.TrianglesMosaicBg({
-		dom: "box",
-		colors: ["#ab80fe","#d926ff","#f2f2f2","#e719ff","#6d92ff","#fe01ff"],
-		loop: true
-	})
-				
+	<script src="./TrianglesMosaicBg.js"></script>			
     </body>
     </html>
